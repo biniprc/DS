@@ -42,7 +42,7 @@ The notebook is a web application that allows you to combine explanatory text, m
 
 ### 1. Frontend
 - To persist the preferred config setting : `~/.jupyter/nbconfig/<section>.json`
-- <section> : notebook, tree, editor, common
+- `<section>` : notebook, tree, editor, common
 - default tabspace example
 ```javascript
 var cell = Jupyter.notebook.get_selected_cell();
