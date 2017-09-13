@@ -37,3 +37,21 @@ The notebook is a web application that allows you to combine explanatory text, m
 ### 2. Slideshow
 - `jupyter nbconvert notebook.ipynb --to slides` : slideshow conversion
 - `jupyter nbconvert notebook.ipynb --to slides --post serve` : immediate display
+
+## 4. Config
+
+### 1. Frontend
+- To persist the preferred config setting : `~/.jupyter/nbconfig/<section>.json`
+- <section> : notebook, tree, editor, common
+- default tabspace example
+```javascript
+var cell = Jupyter.notebook.get_selected_cell();
+var config = cell.config;
+var patch = {
+      CodeCell:{
+        cm_config:{indentUnit: null} // only change here.
+      }
+    }
+config.update(patch)
+```
+- [Frontend Config](http://jupyter-notebook.readthedocs.io/en/latest/frontend_config.html)
