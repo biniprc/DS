@@ -55,3 +55,6 @@ var patch = {
 config.update(patch)
 ```
 - [Frontend Config](http://jupyter-notebook.readthedocs.io/en/latest/frontend_config.html)
+
+## 5. Useful resources
+- https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
